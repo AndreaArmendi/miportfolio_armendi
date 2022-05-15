@@ -51,8 +51,7 @@ header{
     border: 2px solid white;
     padding: 5px 15px;
     margin: 5px;
-    
-
+    box-shadow: 5px 5px lightslategray;
 }
 
 .boton:hover, .btnActivo{
@@ -331,6 +330,7 @@ legend{
 textarea, input[type="text"], input[type="email"]{
     padding: 5px;
     border-radius: 50px;
+    box-shadow: 5px 5px black ;
 }
 
 .cont{
