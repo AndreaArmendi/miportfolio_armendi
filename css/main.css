@@ -456,3 +456,31 @@ footer{
 }
 
 
+/* ---------------BOOTSTRAP--------------------*/
+/* inicio*/
+
+.logo{
+    width: 250px
+}
+
+.nav-link{
+    color: white
+}
+
+
+.boton{
+    text-decoration: none;
+    color:white;
+    border-radius: 200px;
+    border: 2px solid white;
+    padding: 5px 15px;
+    margin: 5px;
+    box-shadow: 5px 5px lightslategray;
+}
+
+
+/*Sobre Mi*/
+
+.container{
+    justify-items: center;
+}
