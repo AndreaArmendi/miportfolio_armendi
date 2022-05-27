@@ -1,0 +1,33 @@
+
+
+.boton{
+    text-decoration: none;
+    color:white;
+    border-radius: 200px;
+    border: 2px solid white;
+    padding: 5px 15px;
+    margin: 5px;
+    box-shadow: 5px 5px rgb(193, 203, 212);
+    &:hover{ .btnActivo{
+        background-color: lightslategray;
+        color: $fondoColor;
+        transition: 1s;
+     }
+
+     }
+
+        
+    
+}
+
+
+
+.boton:hover{
+    transform: translate(10px 20px);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
