@@ -41,6 +41,8 @@
         height: 190px;
         padding: 20px;
         border-radius: 50px;
+
+
     }
 
 }
@@ -136,6 +138,7 @@
 
 
 
+
 //INICIO SECCION CONTACTO//
 
 
@@ -152,12 +155,15 @@
     padding: 30px;
     border-radius: 50px;
     background-image: linear-gradient(to bottom, #bf9fd2, #e5c8f0);
+
+    }
     legend{ 
         padding: 10px;
         color: black;
     }
     .btnFormulario{
         margin-top: 50px;
+        background-color : blue;
     }
     .nombreInput{
         width: 250px;
@@ -175,8 +181,6 @@
     }
     .cont{
     text-align: center;
-}
-
 }
 
 textarea, input[type="text"], input[type="email"]{
