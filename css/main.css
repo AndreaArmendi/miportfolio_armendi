@@ -18,6 +18,10 @@ header{
   padding: 30px;
 }
 
+.bg-dark{
+  background-color: black;
+}
+
 
 .logo img{
   width: 250px;
@@ -159,6 +163,10 @@ padding: 10px;
   margin-top: 50px;
 }
 
+.cuerpo img{
+  border-radius: 20px;
+}
+
 .cuerpo:hover{
   transform: scale(1.1);
 }
@@ -166,13 +174,25 @@ padding: 10px;
 
 /*PROYECTOS*/
 
+.tituloP{
+  text-align: center;
+  font-size: 80px;
+}
 
-.proyecto{
+
+
+ul{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   list-style-type: none;
-  flex-direction: row;  
-  
-  
-  /*no toma nada*/
+  gap: 30px;
+}
+
+/* */
+
+.imag li{
 
 }
+
+
