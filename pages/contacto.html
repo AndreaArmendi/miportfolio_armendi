@@ -5,115 +5,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mi Portfolio | Andrea Armendi</title>
 
-    <!---------------------------link de Animacion---------------------->
+    <!------------------------link de Bootstrap--------------------->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!------------------------link de animacion------------------------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!------------------------link de CSS--------------------------->
+
+    <!-------------------------link de CSS------------------------------>
     <link rel="stylesheet" href="../css/main.css">
 
-    <title>>Mi Portfolio | Andrea Armendi | Contacto</title>
 </head>
+
+<!----------------------------INICIO HEADER BOOTSTRAP------------------->
 
 
 <body>
-    <!--inicio header--->
+
     <header>
-        <div class="contenedorHeader">
-            <div class="indexTitulo">
-                <a href="../index.html" class="logo"><img src="../img/logo.png" alt="Logo Andrea Armendi"></a>
-                <!--fin header-->
 
-                <!--inicio navegacion-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
-                <nav class="menu">
-                    <ul>
-                        <li><a class="boton" href="../index.html">Inicio</a></li>
-                        <li><a class="boton" href="sobremi.html">Sobre mi</a></li>
-                        <li><a class="boton" href="proyectos.html">Proyectos</a></li>
-                        <li><a class="boton" href="conocimentos.html">Conocimientos</a></li>
-                        <li><a class="boton btnActivo" href="contacto.html">Contacto</a></li>
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt="firma"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                        <li class="boton"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="boton"><a class="nav-link" href="sobremi.html">Sobre Mi</a></li>
+
+                        <li class="boton"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+
+                        <li class="boton"><a class="nav-link" href="conocimentos.html">Conocimentos</a></li>
+
+                        <li class="boton btnActivo"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
                     </ul>
-                </nav>
+
+                </div>
+
             </div>
-        </div>
+
+        </nav>
+
     </header>
-    <!--fin menu navegacion-->
+
+    <!-------------------FIN HEADER------------------->
 
 
-    <!--inicio main-->
+
+
+    <!------------inicio main-------------------------->
     <main>
-        <div class="contenedor contenedorBody">
-            <div class="animate__animated animate__flash">
-                <h1 class="tituloC secundaryFont"> ¡Contactame!</h1>
+        
+            
+        <h1 class="tituloC secundaryFont animate__animated animate__flash"> ¡Contactame!</h1>
+          
+
+
+            <!----------inicio formulario--------------->
+
+            <div class="formulario" >
+                <form action="">
+                    <fieldset class="formulario">
+                        <legend class="cont">Contacto</legend>
+                
+                        <div>
+                            <label for="nombre"> Nombre</label>
+                            <input class="nombreInput" type="text" name="nombre" placeholder="Acá va tu nombre">
+                        </div>
+                
+                        <div>
+                            <label for=" apellido"> Apellido</label>
+                            <input class="apellidoInput" type="text" name="apellido" placeholder="Acá va tu apellido">
+                        </div>
+                
+                        <div>
+                            <label for="email"> E-mail</label>
+                            <input class="emailInput" type="email" name="email" placeholder="Acá va tu e-mail">
+                        </div>
+                
+                        <div>
+                            <label for="comentarios"> Comentarios </label>
+                            <textarea class="comentariosInput"> </textarea>
+                        </div>
+                
+                
+                        <div class="btnFormulario">
+                            <input type="reset" value="Borrar" class="btnActivo boton">
+                            <input type="submit" value="Enviar" class="btnActivo boton">
+                        </div>
+                
+                    </fieldset>
+                </form>
             </div>
-
-
-            <!--inicio formulario-->
-
-            <form action="">
-                <fieldset class="formulario">
-                    <legend class="cont">Contacto</legend>
-
-                    <div>
-                        <label for="nombre"> Nombre</label>
-                        <input class="nombreInput" type="text" name="nombre" placeholder="Acá va tu nombre">
-                    </div>
-
-                    <div>
-                        <label for=" apellido"> Apellido</label>
-                        <input class="apellidoInput" type="text" name="apellido" placeholder="Acá va tu apellido">
-                    </div>
-
-                    <div>
-                        <label for="email"> E-mail</label>
-                        <input class="emailInput" type="email" name="email" placeholder="Acá va tu e-mail">
-                    </div>
-
-                    <div>
-                        <label for="comentarios"> Comentarios </label>
-                        <textarea class="comentariosInput"> </textarea>
-                    </div>
-
-
-                    <div class="btnFormulario">
-                        <input type="reset" value="Borrar" class="btnActivo boton">
-                        <input type="submit" value="Enviar" class="btnActivo boton">
-                    </div>
-
-                </fieldset>
-            </form>
-            <!--fin formulario-->
+<!-----------------------fin formulario-------------------------->
         </div>
     </main>
-    <!--fin main-->
 
 
-    <!--inicio footer-->
-    <footer>
-        <div class="contenedorFooter">
+<!--------------------fin main--------------------->
 
-            <ul class="redes">
-                <li><a href="https://www.facebook.com/"> <img class="imagenRedes" src="../img/facebook.png"
-                            alt="facebook">
-                    </a>
-                </li>
-                <li><a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe"> <img class="imagenRedes"
-                            src="../img/email.png" alt="email"></a></li>
-                <li><a href="https://www.instagram.com/?hl=en"> <img class="imagenRedes" src="../img/instagram.png"
-                            alt="insta">
-                    </a></li>
-                <li><a href="https://www.linkedin.com/"> <img class="imagenRedes" src="../img/linkedin.png"
-                            alt="linkedin">
-                    </a>
-                </li>
-            </ul>
-            <a href="https://web.whatsapp.com/"> <img class="btnWhatsapp" src="../img/whatsapp.png" alt="whatsapp"> </a>
-            <p>Desarrollado por Andrea Armendi | Todos los derechos reservados | 2022</p>
-        </div>
-    </footer>
-    <!--fin footer-->
+
+<!-------------------inicio footer------------------->
+
+
+<footer>
+
+
+
+    <ul class="redes">
+        <li><a class="imagenRedes" href="https://www.facebook.com/"> <img src="../img/facebook.png"
+                    alt="facebook"></a></li>
+        <li><a class="imagenRedes" href="https://www.gmail.com/mail/help/intl/es/about.html?iframe"> <img
+                    src="../img/email.png" alt="email"></a></li>
+        <li><a class="imagenRedes" href="https://www.instagram.com/?hl=en"> <img src="../img/instagram.png"
+                    alt="insta"></a></li>
+        <li><a class="imagenRedes" href="https://www.linkedin.com/"> <img src="../img/linkedin.png" alt="linkedin"></a></li>
+    </ul>
+       <div class="btnWhatsapp">
+            <li><a class="imagenRedes" href="https://web.whatsapp.com/"> <img src="../img/whatsapp.png" alt="whatsapp"> </a></li>
+       </div>
+
+    
+    
+    <p>Desarrollado por Andrea Armendi | Todos los derechos reservados | 2022</p>
+
+
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+
 
 
 </body>

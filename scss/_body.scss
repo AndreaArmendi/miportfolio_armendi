@@ -1,83 +1,74 @@
 //MAIN SECCION INICIO//
 
 .contenedorBody{
-    display: flex;
-    flex-direction: column;
-    padding: 120px 30px;
     .mainT{
         text-align: center;
-        font-size: $fontSize;
+        font-size: 75px;
         margin-bottom: 30px;
-        color: $fondoColor;
+        color: black;
         .secundaryFont{
             font-family: 'Courgette', cursive;
-        }
-    }
-    .mainD{
+          }
+        .mainD{
         text-align: center;
-        font-size: 65px;
-    }
+          font-size: 65px;
+      }
 }
 
 //MAIN SECCION SOBRE MI//
 
 
-.cuerpo{
+main{
     .titulo{
         color: black;
         text-align: center;
-        font-size: $fontSize;
+        font-size: 80px;
         padding-top: 10px;
         margin-right: 40px;
-    }
-    .perfil{
-        width: 190px;
-        height: 190px;
-        padding: 20px;
-        border-radius: 50px;
-    }
-    .dibu{
-        width: 190px;
-        height: 190px;
-        padding: 20px;
-        border-radius: 50px;
-
-
-    }
-
+      }
+    .cuerpo{
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 50px;
+        .cuerpo img{
+            border-radius: 20px;
+          }
+          .cuerpo:hover{
+            transform: scale(1.1);
+          }
+      }
+    .textos{
+        display: flex;
+        .caja{
+            color: black;
+            background-color: #CAB8FF;
+            width: 500px;
+            margin-top: 100px;
+            margin-left: 80px;
+            margin-bottom: 100px;
+            border: 2px solid black;
+            .parrafo1{
+                text-align: justify;
+                padding: 10px;
+              }
+            .parrafo2{
+              text-align: justify;
+              padding: 10px;
+              }
+          
+          }
+      }
 }
 
-.fotosPerfil:hover{
-    transform: scale(1.1);
-}
 
 
 
-.textos{
-    display: flex;
-    .caja{
-        color: black;
-        background-color: #CAB8FF;
-        width: 500px;
-        margin-top: 100px;
-        margin-left: 50px;
-        margin-bottom: 10px;
-        border: 2px solid black;
-    }
-    .parrafo1{
-        text-align: justify;
-        padding: 10px;
-    }
-    .parrafo2{
-    text-align: justify;
-    padding: 10px;
-}
-}
 
 
 //SECCION PROYECTOS//
 
-.contenedorBody{
+main{
     .tituloP{
         text-align: center;
         font-size: $fontSize;
@@ -88,10 +79,6 @@
         display: flex;
         margin-top: 50px;
         gap: 15px;
-        div{
-            width:250px;
-            height:250px;
-        }
         .proyecto{
             height: 250px;
             margin-bottom: 20px;
@@ -104,87 +91,76 @@
 //INICIO SECCION CONOCIMIENTOS//
 
 
-
-
-.contenedor{
-    width:960px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+main{
     .tituloC{
         text-align: center;
-        font-size: $fontSize;
-    }
-    .presentacion{
+        font-size: 80px;
+      }
+      .presentacion{
         text-align: center;
         font-size: 30px;
         margin: 50px;
-    }
-    .progr{
+      }
+      .progr{
         display: grid;
         grid-template-columns: 150px 150px;
         grid-template-rows: 150px 150px;
-        row-gap: 10px;
-        column-gap: 10px;
-        li{
-            list-style-type: none;
-            .tecnologias{
-                width: 150px;
-            }
-        }
-    }
+        row-gap: 70px;
+        column-gap: 50px;
+        margin-bottom: 80px;
+      }
 }
-
 
 
 
 //INICIO SECCION CONTACTO//
 
 
-.contenedor{
+main{
     .tituloC{
         text-align: center;
-        font-size: $fontSize;
-    }
-
-}
-
-.formulario{
-    width: 400px;
-    padding: 30px;
-    border-radius: 50px;
-    background-image: linear-gradient(to bottom, #bf9fd2, #e5c8f0);
-
-    }
-    legend{ 
-        padding: 10px;
-        color: black;
-    }
-    .btnFormulario{
-        margin-top: 50px;
-        background-color : blue;
-    }
-    .nombreInput{
-        width: 250px;
-    }
-    .apellidoInput{
-        width: 250px;
-    }
-    .emailInput{
-        width: 250px;
-        margin-left: 25px;
-    }
-    .comentariosInput{
+        font-size: 80px;
+      }
+    .formulario{
         width: 400px;
-        height: 70px;
+        padding: 30px;
+        border-radius: 50px;
+        background-image: linear-gradient(to bottom, #bf9fd2, #e5c8f0);
+        margin: auto;
+        .legend{ 
+            padding: 10px;
+            color: black;
+            .nombreInput{
+                width: 250px;
+              }
+            .apellidoInput{
+                width: 250px;
+              }
+            .emailInput{
+                width: 250px;
+                margin-left: 14px;
+              }
+            .comentariosInput{
+                width: 327px;
+                height: 100px;
+              }
+            .btnFormulario{
+                margin-top: 50px;
+              }
+            textarea, input[type="text"], input[type="email"]{
+                padding: 5px;
+                border-radius: 10px;
+                box-shadow: 5px 5px black ;
+              }
+         }     
+
     }
-    .cont{
-    text-align: center;
+
+
 }
 
-textarea, input[type="text"], input[type="email"]{
-    padding: 5px;
-    border-radius: 50px;
-    box-shadow: 5px 5px black ;
 }
+
+
+
+
